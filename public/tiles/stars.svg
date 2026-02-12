@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <rect width="64" height="64" fill="none"/>
+  <!-- four-point star top-center -->
+  <path d="M32 4l2 5 5 2-5 2-2 5-2-5-5-2 5-2z" fill="rgba(255,130,209,0.12)"/>
+  <!-- small diamond lower-left -->
+  <path d="M14 42l1.5 4 4 1.5-4 1.5-1.5 4-1.5-4-4-1.5 4-1.5z" fill="rgba(188,169,255,0.12)"/>
+  <!-- tiny sparkle right -->
+  <path d="M52 24l1 3 3 1-3 1-1 3-1-3-3-1 3-1z" fill="rgba(151,247,210,0.14)"/>
+</svg>

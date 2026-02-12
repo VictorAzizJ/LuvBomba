@@ -1,0 +1,80 @@
+@import "tailwindcss";
+@config "../../tailwind.config.ts";
+
+/* ─── Selection ─── */
+::selection {
+  background-color: #ff82d1;
+  color: #272447;
+}
+
+/* ─── Body ─── */
+body {
+  font-family: var(--font-vt323), monospace;
+  color: #272447;
+  min-height: 100vh;
+  background-color: #ffe9f7;
+  background-image:
+    url("/tiles/hearts.svg"),
+    url("/tiles/stars.svg"),
+    radial-gradient(
+      circle at 8px 8px,
+      rgba(188, 169, 255, 0.2) 1px,
+      transparent 0
+    ),
+    linear-gradient(
+      135deg,
+      rgba(255, 130, 209, 0.22) 0%,
+      rgba(188, 169, 255, 0.18) 50%,
+      rgba(151, 247, 210, 0.22) 100%
+    );
+  background-size: 48px 48px, 64px 64px, 20px 20px, cover;
+  background-position: 0 0, 24px 24px, 0 0, 0 0;
+}
+
+/* ─── Custom scrollbar ─── */
+::-webkit-scrollbar {
+  width: 14px;
+}
+::-webkit-scrollbar-track {
+  background: repeating-linear-gradient(
+    0deg,
+    #ddd2ff 0px,
+    #ddd2ff 2px,
+    #ffe9f7 2px,
+    #ffe9f7 4px
+  );
+  border: 2px solid #272447;
+}
+::-webkit-scrollbar-thumb {
+  background: #bca9ff;
+  border: 2px solid #272447;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ff82d1;
+}
+
+/* ─── Links ─── */
+a {
+  color: #8a6eef;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+  transition: color 0.15s;
+}
+a:hover {
+  color: #ff82d1;
+}
+
+/* ─── Focus ring ─── */
+:focus-visible {
+  outline: 3px dashed #ff82d1;
+  outline-offset: 2px;
+}
+
+/* ─── Pixel font helpers (runtime vars from Next.js font loader) ─── */
+.font-pixel {
+  font-family: var(--font-vt323), monospace;
+}
+.font-retro {
+  font-family: var(--font-press-start), cursive;
+}
